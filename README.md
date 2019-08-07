@@ -35,5 +35,5 @@ The model file will be saved. Suppose it is `base.pth`. Then train the final mod
 ```bash
 python train_adv.py train.txt valid.txt -pth base.pth
 ```
-See the help of `train_base.py` and `train_adv.py` for more details. The default network is ResNet-18.
+See the help of `train_base.py` and `train_adv.py` for more details. The default network is **ResNet-18**.
 
