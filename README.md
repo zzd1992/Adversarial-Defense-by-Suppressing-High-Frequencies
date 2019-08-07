@@ -18,21 +18,17 @@ There are about 11,000 images with 110 categories for electric business. The goa
 As we can see, our high frequency suppression module works well. It is even better than adversarial training on this challenge. The official leaderboard is [here](https://tianchi.aliyun.com/competition/entrance/231701/rankingList/5).
 
 # How to use our code
-
 ### Requirements
-
 Pytorch >= 0.4.0
 Python >= 3.5
 
 ### Prepare your data
-
 First, modify the meta information in `cfg.py`. `root` means the root path of your data. `croped_size` is the size which images are croped to during training. We suggest you resize your images into a fixed size before training.
 Then, generate text files of the training data and validation data. Each line of the file records the relative path and the label of an image. The label is an integer started from 0. Here is an example of a line:
 ```
 image_00000.jpg,0
 ```
 ### Run the scripts
-
 Suppose your training data is recorded in `train.txt` and your validation data is recorded in `valid.txt`. Then train the base model (without adversarial training):
 ```
 python train_base.py train.txt valid.txt
