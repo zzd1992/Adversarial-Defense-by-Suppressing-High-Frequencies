@@ -30,11 +30,11 @@ image_00000.jpg,0
 ```
 ### Run the scripts
 Suppose your training data is recorded in `train.txt` and your validation data is recorded in `valid.txt`. Then train the base model (without adversarial training):
-```base
+```bash
 python train_base.py train.txt valid.txt
 ```
 Then the model file will be saved. Suppose it is `base.pth`. Then train the final model (with adversarial training):
-```base
+```bash
 python train_adv.py train.txt valid.txt -pth base.pth
 ```
 See the help of `train_base.py` and `train_adv.py` for more details.
