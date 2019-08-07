@@ -16,7 +16,7 @@ There are about 11,000 images with 110 categories for electric business. The goa
 
 As we can see, our high frequency suppression module works well. It is even better than adversarial training on this challenge. The official leaderboard is [here](https://tianchi.aliyun.com/competition/entrance/231701/rankingList/5).
 
-## How to use our code
+# How to use our code
 ### Requirements
 PyTorch >= 0.4.0 and Python >= 3.5
 
