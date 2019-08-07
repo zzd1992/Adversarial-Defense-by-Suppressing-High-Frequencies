@@ -1,4 +1,4 @@
-# Adversarial Defense by Suppressing High Frequencies
+# Adversarial defense by suppressing high frequencies
 We develop a **higt frequency suppression module** based on discrete Fourier transform which is used for adversiaral defense. It is 
 efficient, differentiable and controllable. Together with adversiaral training, we won the fifth place of the defense track of the [IJCAI-2019 Alibaba Adversarial AI Challenge](https://security.alibaba.com/alibs2019)(AAAC). This project is a minimum implementation of our solution.
 
@@ -17,7 +17,7 @@ There are about 11,000 images with 110 categories for electric business. The goa
 
 As we can see, our high frequency suppression module works well. It is even better than adversarial training on this challenge. The official leaderboard is [here](https://tianchi.aliyun.com/competition/entrance/231701/rankingList/5).
 
-# How to use our code
+## How to use our code
 ### Requirements
 Pytorch >= 0.4.0
 Python >= 3.5
