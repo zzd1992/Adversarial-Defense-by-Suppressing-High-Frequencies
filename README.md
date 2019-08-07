@@ -33,7 +33,7 @@ Suppose your training data is recorded in `train.txt` and your validation data i
 ```bash
 python train_base.py train.txt valid.txt
 ```
-Then the model file will be saved. Suppose it is `base.pth`. Then train the final model (with adversarial training):
+The model file will be saved. Suppose it is `base.pth`. Then train the final model (with adversarial training):
 ```bash
 python train_adv.py train.txt valid.txt -pth base.pth
 ```
