@@ -19,7 +19,7 @@ As we can see, our high frequency suppression module works well. It is even bett
 
 ## How to use our code
 ### Requirements
-Pytorch >= 0.4.0 and Python >= 3.5
+PyTorch >= 0.4.0 and Python >= 3.5
 
 ### Prepare your data
 First, modify the meta information in `cfg.py`. `root` means the root path of your data. `croped_size` is the size which images are croped to during training. We suggest you resize your images into a fixed size before training.
