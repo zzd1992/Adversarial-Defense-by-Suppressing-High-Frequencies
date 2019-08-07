@@ -1,6 +1,6 @@
 # Adversarial defense by suppressing high frequencies
 We develop a **higt frequency suppression module** based on discrete Fourier transform which is used for adversiaral defense. It is 
-efficient, differentiable and controllable. Together with adversiaral training, we won the fifth place of the defense track of the [IJCAI-2019 Alibaba Adversarial AI Challenge](https://security.alibaba.com/alibs2019)(AAAC). This project is a minimum implementation of our solution.
+efficient, differentiable and controllable. Together with adversiaral training, we won the fifth place of the defense track of the [IJCAI-2019 Alibaba Adversarial AI Challenge](https://security.alibaba.com/alibs2019) (AAAC). This project is a minimum implementation of our solution.
 
 The motivation of our solution is that adversarial perturbations are dominated by high frequencies while information on clean images converges on low frequencies. Thus, if we suppress high frequencies of adversiaral images, the effects of adversarial perturbations will be reduced while the basic information on clean images will be preserved. See details in our paper and presentation.
 
@@ -19,8 +19,7 @@ As we can see, our high frequency suppression module works well. It is even bett
 
 ## How to use our code
 ### Requirements
-Pytorch >= 0.4.0
-Python >= 3.5
+Pytorch >= 0.4.0 and Python >= 3.5
 
 ### Prepare your data
 First, modify the meta information in `cfg.py`. `root` means the root path of your data. `croped_size` is the size which images are croped to during training. We suggest you resize your images into a fixed size before training.
