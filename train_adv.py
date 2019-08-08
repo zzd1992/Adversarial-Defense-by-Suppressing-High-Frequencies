@@ -29,6 +29,8 @@ parse.add_argument('-beta', default=1.0, type=float, help='weight of adversarial
 args = parse.parse_args()
 print(args)
 
+if not os.path.isdir("checkpoints"): os.mkdir("checkpoints")
+
 transform_train = transforms.Compose([
     transforms.RandomCrop(cfg.crop_size),
     transforms.RandomHorizontalFlip(),
@@ -88,6 +90,6 @@ for i in range(epoch):
         if accs > best_acc:
             best_acc = copy.deepcopy(accs)
             if i >= int(epoch * 0.65):
-                torch.save(net.state_dict(), "models/adv_r{}_epoch{}.pth".format(args.r, i))
+                torch.save(net.state_dict(), "checkpoints/adv_r{}_epoch{}.pth".format(args.r, i))
 
-torch.save(net.state_dict(), "models/adv_r{}_epoch{}.pth".format(args.r, i))
+torch.save(net.state_dict(), "checkpoints/adv_r{}_epoch{}.pth".format(args.r, i))
