@@ -8,7 +8,7 @@ from torch.utils.data import DataLoader
 from resnet import ResNet18
 from core import Trades
 import cfg
-import eval
+import evaluation
 
 parse = argparse.ArgumentParser()
 parse.add_argument('train_file', help='file of training images')
@@ -84,7 +84,7 @@ for i in range(epoch):
     print("{}th epoch: {:.5f}\t{:.1f}s".format(i, error/(num+1), time.time()-t))
 
     if i%2 == 0:
-        accs = eval.clean(net, testloader)
+        accs = evaluation.clean(net, testloader)
         accs /= len(testset)
         print("metric: {:.4f}".format(accs))
         if accs > best_acc:
