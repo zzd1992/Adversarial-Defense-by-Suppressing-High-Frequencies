@@ -22,6 +22,7 @@ PyTorch >= 0.4.0 and Python >= 3.5
 
 ### Prepare your data
 First, modify the meta information in `cfg.py`. `root` means the root path of your data. `crop_size` is the size which images are cropped to during training. We suggest you resize your images into a fixed size before training.
+
 Then, generate text files of the training data and validation data. Each line of the file records the relative path and the label of an image. The label is an integer started from 0. Here is an example of a line:
 ```
 image_00000.jpg,0
