@@ -38,7 +38,7 @@ python train_adv.py train.txt valid.txt -pth base.pth
 ```
 See the help of `train_base.py` and `train_adv.py` for more details. The default network is **ResNet-18**.
 
-＃ Citation
+# Citation
 If you find our method is useful, please cite our technical report:
 ```
 @article{zhang2019adversarial,
