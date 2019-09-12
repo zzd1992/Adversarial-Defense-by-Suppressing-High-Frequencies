@@ -1,5 +1,5 @@
 # Adversarial defense by suppressing high frequencies
-We develop a **high frequency suppression module** based on discrete Fourier transform which is used for adversarial defense. It is efficient, differentiable and controllable. Together with adversarial training, we won the fifth place of the [IJCAI-2019 Alibaba Adversarial AI Challenge](https://security.alibaba.com/alibs2019) (AAAC). This project is a minimum implementation of our solution.
+We develop a **high frequency suppression module** based on discrete Fourier transform which is used for adversarial defense. It is **efficient, differentiable and controllable**. Together with adversarial training, we won the fifth place of the [IJCAI-2019 Alibaba Adversarial AI Challenge](https://security.alibaba.com/alibs2019) (AAAC). This project is a minimum implementation of our solution.
 
 The motivation of our solution is that adversarial perturbations are dominated by high frequencies while information on clean images converges on low frequencies. Thus, if we suppress high frequencies of adversarial images, the effects of adversarial perturbations will be reduced while the basic information on clean images will be preserved. Our module is processed in frequency domain. See details in our [technical report](https://arxiv.org/abs/1908.06566) and presentation.
 
